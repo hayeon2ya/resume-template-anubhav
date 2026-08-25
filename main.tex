@@ -1,30 +1,28 @@
 %------------------------
-% Resume Template
-% Author : Anubhav Singh
-% Github : https://github.com/xprilion
+% Curriculum Vitae
+% Based on Resume Template by Anubhav Singh
 % Source : https://www.overleaf.com/latex/templates/resume-template-by-anubhav/dhmkrwtksdgy
 % License: See NOTICE.md
 %------------------------
 
-\documentclass[a4paper,20pt]{article}
+\documentclass[a4paper,10pt]{article}
 
-\usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{array}
+\usepackage{longtable}
 
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4pt}
 
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.530in}
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
@@ -32,141 +30,127 @@
 \addtolength{\textheight}{1in}
 
 \urlstyle{rm}
-
 \raggedbottom
 \raggedright
-\setlength{\tabcolsep}{0in}
+\setlength{\tabcolsep}{4pt}
+\setlist[itemize]{leftmargin=*, itemsep=1pt, topsep=2pt}
+\setlist[enumerate]{leftmargin=*, itemsep=2pt, topsep=2pt}
 
-% Sections formatting
 \titleformat{\section}{
-  \vspace{-10pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeItemWithoutTitle}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
+\newcommand{\cvSubheading}[4]{
   \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{#3} & \textit{#4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+\newcommand{\cvItem}[2]{
+  \item\small{\textbf{#1}: #2}
+}
 
-\renewcommand{\labelitemii}{$\circ$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-----------------------------
-%%%%%%  CV STARTS HERE  %%%%%%
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 
 \begin{document}
 
-%----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\LARGE Anubhav Singh}} & Email: \href{mailto:xprilion@gmail.com}{xprilion@gmail.com}\\
-  \href{https://xprilion.com}{Portfolio: xprilion.com} & Mobile: +91-XXX-XXXX-XXX \\
-  \href{https://github.com/xprilion}{Github: github.com/xprilion} \\
-\end{tabular*}
+\begin{center}
+  {\LARGE \textbf{Curriculum Vitae}}\\
+  \vspace{2pt}
+  {\large Hayeon Lee, PhD candidate}\\
+  \vspace{2pt}
+  Last updated: July 14, 2026\\
+  Email: \href{mailto:wwhy28@khu.ac.kr}{wwhy28@khu.ac.kr}
+\end{center}
 
-%-----------EDUCATION-----------------
+\section{Major}
+\small{
+Digital Health; Medical Informatics; Medical AI; Biomedical Engineering; Mathematical Modelling.
+}
+
+\section{Personal Information}
+\begin{enumerate}
+  \item Department of Biomedical Engineering, Kyung Hee University College of Electronics and Information
+  \item Department of Electronics and Information Convergence Engineering, Kyung Hee University
+  \item Center for Digital Health, Medical Science Research Institute, Kyung Hee University; Kyung Hee University Medical Center, 23 Kyungheedae-ro, Dongdaemun-gu, Seoul, 02447, South Korea
+\end{enumerate}
+
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Netaji Subhash Engineering College}{Kolkata, India}
-      {Bachelor of Technology - Information Technology; GPA: 7.27}{July 2016 - June 2020}
-      {\scriptsize \textit{\footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Machine Learning, Networking, Databases}}}
-  \resumeSubHeadingListEnd
+\begin{itemize}
+  \cvSubheading
+    {Kyung Hee University}{South Korea}
+    {PhD course, Department of Electronics and Information Convergence Engineering}{Present}
+  \cvSubheading
+    {Kyung Hee University College of Electronics and Information}{South Korea}
+    {MS, Department of Biomedical Engineering}{2024}
+  \cvSubheading
+    {Kyung Hee University College of Electronics and Information}{South Korea}
+    {BS, Department of Biomedical Engineering}{2022}
+\end{itemize}
 
-\vspace{-5pt}
-\section{Skills Summary}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Languages}{Python, PHP, C++, JavaScript, SQL, Bash, Java}
-    \resumeSubItem{Frameworks}{Scikit, NLTK, SpaCy, TensorFlow, Keras, Django, Flask, NodeJS, LAMP}
-    \resumeSubItem{Tools}{Kubernetes, Docker, Git, PostgreSQL, MySQL, SQLite}
-    \resumeSubItem{Platforms}{Linux, Web, Windows, Arduino, Raspberry Pi, AWS, GCP, Alibaba Cloud, IBM Cloud}
-    \resumeSubItem{Soft Skills}{Leadership, Event Management, Writing, Public Speaking, Time Management}
-  \resumeSubHeadingListEnd
+\section{Awards and Honors}
+\begin{itemize}
+  \cvItem{2025--2026}{Research Fellow, New York University}
+  \cvItem{2025}{Presidential Science Scholarship for Graduate Students, Ministry of Science and ICT (MSIT) and Korea Scholarship Foundation}
+  \cvItem{2025}{Kyung Hee Honor Young Scholar Society, Kyung Hee University, Korea}
+  \cvItem{2025}{Samil Scholarships, The Samil Foundation}
+  \cvItem{2024}{Korea Talent Award, awarded by the Deputy Prime Minister and Minister of Education, Republic of Korea}
+  \cvItem{2024}{EAACI Congress Award, European Academy of Allergy and Clinical Immunology}
+  \cvItem{2024}{President of the Korea Society of Medical Informatics Award, The Korean Society of Medical Informatics}
+  \cvItem{2024}{Samil Scholarships, The Samil Foundation}
+  \cvItem{2024}{International Participants Award, The 83rd Conference of Japanese Society of Public Health}
+  \cvItem{2024}{Best Oral Presentation Award, The 31st Conference of Korean Association of Basic Medical Scientists}
+  \cvItem{2024}{Best Oral Presentation Award, The 5th Kohwang Scholar Academic Festival, Kyung Hee University}
+  \cvItem{2024}{The Outstanding Master's Thesis Award, Kyung Hee University}
+  \cvItem{2023}{Health Research Fellowship, Health Fellowship Foundation, Korea}
+\end{itemize}
 
-\vspace{-5pt}
-\section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading{Google Summer of Code - Submitty}{Remote}
-      {Student Developer (Full-time)}{May 2019 - Sep 2019}
-      \resumeItemListStart
-        \resumeItem{Discussion Forum Upgrades}{Refactored forum for performance to handle large databases.}
-        \resumeItem{REST API for Discussion Forum}{Converted Symfony and Twig forum parts to an API-first interface.}
-        \resumeItem{Ratchet PHP WebSocket}{Implemented a WebSocket for low-latency real-time exchange of posts and thread updates.}
-      \resumeItemListEnd
+\section{Featured Publications}
+\footnotesize
+\begin{longtable}{L{0.03\textwidth} L{0.44\textwidth} L{0.14\textwidth} L{0.07\textwidth} L{0.11\textwidth} L{0.04\textwidth}}
+\textbf{} & \textbf{Title} & \textbf{Journal} & \textbf{Date} & \textbf{Role} & \textbf{IF}\\
+\hline
+1 & Prenatal Exposure to Acid-Suppressive Medications and Risk of Neuropsychiatric Disorders in Children [Editor's Highlights] & JAMA & 2026 & Corresponding & 55\\
+2 & Global, regional and national burden of ischemic heart disease attributable to suboptimal diet, 1990--2023: a Global Burden of Disease study [Editor's Highlights] & Nat Med & 2026 & First & 50\\
+3 & Long-Term Autoimmune Inflammatory Rheumatic Outcomes of COVID-19: A Binational Cohort Study & Ann Intern Med & 2024 & Corresponding & 39.2\\
+4 & Live zoster vaccination and cardiovascular outcomes: a nationwide, South Korean study [Editor's Highlights] & Eur Heart J & 2025 & Corresponding & 38.1\\
+5 & Burden of Cardiovascular Outcomes After SARS-CoV-2 Infection in South Korea and Japan: A Binational Population-Based Cohort Study [Editor's Highlights] & Circulation & 2025 & Corresponding & 35.6\\
+6 & Short- and long-term neuropsychiatric outcomes in long COVID in South Korea and Japan & Nat Hum Behav & 2024 & Corresponding & 29.9\\
+7 & Acute and post-acute respiratory complications of SARS-CoV-2 infection: population-based cohort study in South Korea and Japan & Nat Commun & 2024 & Corresponding & 16.6\\
+8 & Incident allergic diseases in post-COVID-19 condition: multinational cohort studies from South Korea, Japan and the UK & Nat Commun & 2024 & Corresponding & 16.6\\
+9 & Long-term gastrointestinal and hepatobiliary outcomes of COVID-19: a multi-nationwide cohort study from South Korea, Japan, and the UK & Clin Mol Hepatol & 2024 & Corresponding & 14\\
+10 & Risks of cutaneous immune-related adverse events in long COVID: Multinational cohort studies in South Korea, Japan, and the UK & J Med Virol & 2024 & Corresponding & 12.7\\
+11 & Global estimates on the reports of vaccine-associated myocarditis and pericarditis from 1969 to 2023: Findings with critical reanalysis from the WHO pharmacovigilance database & J Med Virol & 2024 & First & 12.7\\
+12 & Global and regional burden of vaccine-associated facial paralysis, 1967--2023: Findings from the WHO international pharmacovigilance database & J Med Virol & 2024 & Corresponding & 12.7\\
+13 & Risks of alopecia areata in long COVID: Binational population-based cohort studies from South Korea and Japan & J Med Virol & 2024 & Corresponding & 12.7\\
+14 & Global burden of vaccine-associated angioedema and their related vaccines, 1967--2023: Findings from the global pharmacovigilance database & Allergy & 2024 & Corresponding & 12.6\\
+15 & Global burden of vaccine-associated anaphylaxis and their related vaccines, 1967--2023: A comprehensive analysis of the international pharmacovigilance database [Editor's Highlights] & Allergy & 2024 & First & 12.4\\
+16 & Live Zoster Vaccination and the Reduced Risk of Chronic Respiratory Diseases: An Emulated Target Trial & Allergy & 2025 & Corresponding & 12\\
+17 & Effectiveness of the live zoster vaccine in patients with type 2 diabetes: A nationwide emulated target trial & Clin Microbiol Infect & 2025 & Corresponding & 10.9\\
+18 & Global burden of vaccine-associated alopecia, 1979--2023: a comprehensive analysis of the international pharmacovigilance database & Br J Dermatol & 2024 & Corresponding & 10.1\\
+\end{longtable}
+\normalsize
 
-    \resumeSubheading{DataCamp Inc.}{Remote}
-      {Instructor (Part-time, Contractual)}{Dec 2018 - Present}
-      \resumeItemListStart
-        \resumeItem{Project Course - Find Movie Similarity from Plot Summaries}{Created a project-based course using unsupervised learning and natural language processing.}
-        \resumeItem{Tutorial - Introduction to Reinforcement Learning}{Created a tutorial for Q-learning reinforcement learning algorithms and concepts.}
-        \resumeItem{Impact}{Course has been taken by 250+ students with a 4.65 average rating.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------------
-\vspace{-5pt}
-\section{Projects}
-\resumeSubHeadingListStart
-  \resumeSubItem{Vison - Multimedia Search Engine}{Research-oriented open source search engine for reverse multimedia search. Tech: Python, NodeJS, Intel OpenVINO Toolkit, Selenium, TensorFlow.}
-  \vspace{2pt}
-  \resumeSubItem{Reinforcement Learning Traffic Control System}{AI model to improve city traffic routing. Tech: Python, Alibaba Cloud, Raspberry Pi, Arduino, SUMO, OpenCV.}
-  \vspace{2pt}
-  \resumeSubItem{Panorama from Satellite Imagery}{Stitched drone images using distributed public compute nodes. Tech: PHP, C++, Java, Python.}
-  \vspace{2pt}
-  \resumeSubItem{Drag-and-Drop Machine Learning Environment}{Built a Scratch-like tool for machine learning pipelines with tutorials. Tech: Python, JavaScript.}
-  \vspace{2pt}
-  \resumeSubItem{Search Engine and Social Network}{Created a social network and search engine website. Tech: PHP, MySQL, HTML, CSS, WebSockets, JavaScript, RSS, XML.}
-\resumeSubHeadingListEnd
-
-\vspace{-5pt}
 \section{Publications}
-\resumeSubHeadingListStart
-  \resumeSubItem{Book: Deep Learning on Web}{Work in progress book. Tech: Django, Python, AWS, GCP, Azure.}
-  \vspace{2pt}
-  \resumeSubItem{Book: Deep Learning on Mobile Devices}{Work in progress book. Tech: Flutter, Android, Firebase, TensorFlow, Python, Dart.}
-\resumeSubHeadingListEnd
+\small{
+Publications from 2023 to present include 142 listed works across JAMA, Nature Medicine, Annals of Internal Medicine, European Heart Journal, Circulation, Nature Human Behaviour, Nature Communications, Lancet Infectious Diseases, Diabetes Care, Allergy, J Med Virology, EClinicalMedicine, J Med Internet Research, Scientific Reports, and other journals. The featured publications above summarize the highest-impact representative works from the full publication list.
+}
 
-\vspace{-5pt}
-\section{Honors and Awards}
-\begin{description}[font=$\bullet$]
-  \item {Awarded title of Intel Software Innovator - May 2019}
-  \vspace{-5pt}
-  \item {Second Runner-Up at TCS EngiNx Engineering Project Innovation Content - September 2018}
-  \vspace{-5pt}
-  \item {Runner-Up at Facebook Developers Circle Hackathon - August 2017}
-\end{description}
+\section{Referees}
+\begin{enumerate}
+  \item \textbf{Jinseok Lee, PhD}\\
+  Professor (PhD Supervisor), Department of Biomedical Engineering, Kyung Hee University, 1732 Deogyeong-daero, Giheung-gu, Yongin 17104, South Korea.\\
+  Email: \href{mailto:gonasago@khu.ac.kr}{gonasago@khu.ac.kr}.
 
-\vspace{-5pt}
-\section{Volunteer Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Community Lead at Developer Student Clubs NSEC}{Kolkata, India}
-      {Conducted online and offline technical and soft-skills training impacting over 3000 students.}{Jan 2019 - Present}
-    \vspace{5pt}
-    \resumeSubheading
-      {Event Organizer at Google Developers Group Kolkata}{Kolkata, India}
-      {Organized events, conducted workshops, and delivered workshops reaching over 7000 developers.}{Jan 2018 - Present}
-  \resumeSubHeadingListEnd
+  \item \textbf{Jae Myung Cha, MD, PhD}\\
+  Vice President, Kyung Hee University Hospital at Gangdong; Division of Gastroenterology, Department of Internal Medicine, Kyung Hee University Hospital at Gangdong, School of Medicine, Kyung Hee University, Seoul 05278, Republic of Korea.\\
+  Email: \href{mailto:clicknox@hanmail.net}{clicknox@hanmail.net}.
+
+  \item \textbf{Young Chan Lee, MD, PhD}\\
+  Director, Center for Medical Big Data, Kyung Hee University Hospital at Gangdong; Department of Otolaryngology-Head and Neck Surgery, Kyung Hee University School of Medicine, Kyung Hee University Hospital at Gangdong, Seoul 05278, Republic of Korea.\\
+  Email: \href{mailto:medchan@khu.ac.kr}{medchan@khu.ac.kr}.
+\end{enumerate}
 
 \end{document}

@@ -1,6 +1,6 @@
-# Resume Template by Anubhav
+# Hayeon Lee CV
 
-LaTeX resume template based on Anubhav Singh's Overleaf template.
+LaTeX curriculum vitae for Hayeon Lee, based on Anubhav Singh's Overleaf resume template.
 
 Source: <https://www.overleaf.com/latex/templates/resume-template-by-anubhav/dhmkrwtksdgy>
 
@@ -20,6 +20,6 @@ make clean
 
 ## Notes
 
-- Edit `main.tex` with your own resume content.
+- Edit `main.tex` to update CV content.
 - The Overleaf page lists the template license as Creative Commons CC BY 4.0.
 - The source header on Overleaf says MIT. See `NOTICE.md` before publishing changes.
